@@ -1,0 +1,3 @@
+
+let cerrar = document.querySelectorAll();
+
