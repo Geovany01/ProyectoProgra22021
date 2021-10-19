@@ -43,7 +43,7 @@ pattern="[E]{1}[0-9]{3}" required
                                 <label for="lblTelefono"><b>Telefono</b></label>
                                 <input type="number" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="Ejemplo: 12345678">
                                 <label for="lblDPI"><b>DPI</b></label>
-                                <input type="text" name="txtDPI" id="txtDPI" class="form-control" placeholder="Ejemplo: E001" >
+                                <input type="text" name="txtDPI" id="txtDPI" class="form-control" placeholder="Ejemplo: 1243 12354 0201" >
                                 <label for="lblGenero"><b>Genero</b></label>
                                 <input type="text" name="txtGenero" id="txtGenero" class="form-control" placeholder="Ejemplo: Masculino/Femenino" >
                                 <label for="lblFechaNacimiento"><b>Nacimiento</b></label>

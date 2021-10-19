@@ -27,7 +27,6 @@ table tr:nth-child(even) {
 }
 
 .contenedor {
-    width: 40%;
-    
+    width: 40%;   
     margin: auto;
 }

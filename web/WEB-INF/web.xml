@@ -12,6 +12,14 @@
         <servlet-name>SrCliente</servlet-name>
         <servlet-class>controlador.SrCliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SrProveedor</servlet-name>
+        <servlet-class>controlador.SrProveedor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrMarca</servlet-name>
+        <servlet-class>controlador.SrMarca</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SrPuesto</servlet-name>
         <url-pattern>/SrPuesto</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>SrCliente</servlet-name>
         <url-pattern>/SrCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrProveedor</servlet-name>
+        <url-pattern>/SrProveedor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrMarca</servlet-name>
+        <url-pattern>/SrMarca</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

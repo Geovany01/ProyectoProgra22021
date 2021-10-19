@@ -3,7 +3,7 @@ package modelo;
 abstract class Persona {
 
     private int id;
-    private String nombres, apellidos, direccion, telefono, fechaNacimiento;
+    private String nombres, apellidos, direccion, NIT, telefono, fechaNacimiento;
 
     public Persona() {
 
@@ -24,7 +24,15 @@ abstract class Persona {
         this.apellidos = apellidos;
         this.telefono = telefono;
     }
-    
+
+    public Persona(int id, String nombres, String NIT, String direccion, String telefono) {
+        this.id = id;
+        this.nombres = nombres;
+        this.NIT = NIT;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
     public int getId() {
         return id;
     }
@@ -55,6 +63,14 @@ abstract class Persona {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+    
+    public String getNIT() {
+        return NIT;
+    }
+
+    public void setNIT(String NIT) {
+        this.NIT = NIT;
     }
 
     public String getTelefono() {
