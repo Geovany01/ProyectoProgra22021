@@ -12,8 +12,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Puestos</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/form.css" rel="stylesheet" type="text/css">
+        <link href="css/table.css" rel="stylesheet" type="text/css">
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
     <body>
@@ -29,16 +30,25 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form action="SrPuesto" method="post" class="form-group">
-                                    <label for="lblId"><b>ID</b></label>
-                                    <input type="text" name="txtId" id="txtId" class="form-control" value="0"  readonly>
-                                    <label for="lblPuesto"><b><h2>Ingrese el puesto</h2></b></label>
-                                    <input type="text" name="txtPuesto" id="txtPuesto" class="form-control" placeholder="Ejemplo: Gerente">
-                                    <br>
-                                    <button name="btn_agregar" id="btn_agregar" value="agregar" class="btn btn-primary btn-lg">Agregar</button>
-                                    <button name="btn_modificar" id="btn_modificar" value="modificar" class="btn btn-success btn-lg">Modifi</button>
-                                    <button name="btn_eliminar" id="btn_eliminar" value="eliminar" class="btn btn-danger btn-lg">Eliminar</button>
-                                    <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                                <form action="SrPuesto" method="post" class="form">
+                                    <h2 class="form_title">Ingresar Datos</h2>
+                                    <div class="form_container">
+                                        <div class="form_group">
+                                            <input type="text" name="txtId" id="txtId" class="form_imput" value="0" readonly>
+                                            <label for="lblId" class="form_label">ID</label>
+                                            <span class="form_line"></span>
+                                        </div>
+                                        <div class="form_group">
+                                            <input type="text" name="txtPuesto" id="txtPuesto" class="form_imput" placeholder="Ejemplo: Gerente">
+                                            <label for="lblPuesto" class="form_label">Ingrese el Puesto:</label>
+                                            <span class="form_line"></span>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button name="btn_agregar" id="btn_agregar" value="agregar" class="form_submit">Agregar</button>
+                                            <button name="btn_modificar" id="btn_modificar" value="modificar" class="form_submit">Modificar</button>
+                                            <button name="btn_eliminar" id="btn_eliminar" value="eliminar" class="form_submit">Eliminar</button>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
